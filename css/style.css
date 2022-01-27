@@ -59,6 +59,10 @@ img {
     margin-right: 1.5rem;
 }
 
+.header__telephone-text span:nth-child(1) {
+    margin-right: 1.2rem;
+}
+
 .header__wrap {
     display: flex;
     justify-content: space-between;
@@ -99,6 +103,14 @@ img {
     font-weight: bold;
     font-size: 1.4rem;
     line-height: 114%;
+}
+
+.footer__adress ul{
+    max-width: 22.4rem;
+}
+
+.footer__adress ul > li:nth-child(1) {
+    margin-bottom: 1rem;
 }
 
 .footer__decor-1 {
@@ -171,7 +183,9 @@ img {
 
 .main__display-center {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    background: url(../img/header0bg.png) no-repeat center right -7.4rem;
+    background-size: contain; 
 }
 
 .main__display-left {
@@ -267,4 +281,75 @@ img {
     font-size: 1.4rem;
     line-height: 114%;
     color: #767676;
+}
+
+.review {
+    margin-top: 20rem;
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+    padding: 5rem 0;
+}
+
+.review__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 25rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 0.9rem;
+    padding: 6.3rem 3rem 5rem 3rem;
+}
+
+.review__slide-photo {
+    clip-path: polygon(50% 5%, 98% 30%, 98% 69%, 50% 95%, 0% 66%, 1% 33%);
+    width: 10.5rem;
+    height: 12.5rem;
+    background-color: #fff;
+}
+
+.review__slide-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    clip-path: polygon(50% 4%, 96% 30%, 96% 69%, 50% 96%, 2% 66%, 3% 33%);
+    width: 11.5rem;
+    height: 13rem;
+    background: linear-gradient(90deg, rgba(185,1,96, 1) 0%, rgba(61, 91, 245, 1) 100%);
+}
+
+.review__wrapper {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.review__slide-text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 117%;
+    text-align: center;
+}
+
+.review__slide-text:after {
+    content: "";
+    display: block;
+    margin-top: 15px;
+    height: 0.2rem;
+    width: 13rem;
+    background: linear-gradient(90deg, rgba(185,1,96, 1) 0%, rgba(61, 91, 245, 1) 100%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.review__slide-name {
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 115%;
+    color: #8E8E8E;
+    margin-top: 2rem;
 }
