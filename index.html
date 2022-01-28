@@ -69,7 +69,7 @@
                         <div class="main__display-subheader">
                             в вашем городе
                         </div>
-                        <button class="main__display-btn type="button" >ЗАКАЗАТЬ</button>
+                        <button class="main__display-btn" type="button" >ЗАКАЗАТЬ</button>
                     </div>
                     <div class="main__display-right">
                         <img src="img/headerimg.png" alt="img">
@@ -255,6 +255,33 @@
             </div>
         </div>
     </footer>
+
+    <form action="#" class="modal">
+        <div class="modal__inner">
+            <div class="modal__inner-header">ФОРМА ЗАЯВКИ</div>
+            <div class="modal__inner-elements">
+                <div class="modal__item">
+                    <div class="modal__wrap-input">
+                        <input type="text" class="modal__input" placeholder="Ваше имя">
+                    </div>    
+                    <div class="modal__wrap-input">
+                        <input type="email" class="modal__input" placeholder="Ваш e-mail">
+                    </div>
+                </div>
+                <div class="modal__item modal__item-long">                  
+                        <textarea class="modal__text" name="text" id="" cols="30" rows="10" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+                </div>
+                <div class="modal__policy">
+                    <input id="check" type="checkbox">
+                    <label for="check">
+                        <span>Я соглашаюсь с</span>
+                        <a href="#">Политикой безопасности</a>
+                    </label>
+                </div>
+                <button class="main__display-btn modal__button" type="button" >отправить</button>
+            </div>
+        </div>
+    </form>
 
     <script src="js/swiper-bundle.js" ></script>
     <script src="js/main.js" ></script>

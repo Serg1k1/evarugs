@@ -28,3 +28,17 @@ const swiper = new Swiper('.swiper', {
           }
       }
 });
+
+const modal = document.querySelector('.modal');
+const buttonModal = document.querySelector('.main__display-btn');
+
+buttonModal.addEventListener('click', () => {
+    modal.classList.add('active');
+})
+
+modal.addEventListener('click', (e) => {
+    const isModal = e.target.closest('.modal__inner');
+    if(!isModal) {
+        modal.classList.remove('active');
+    }
+});
